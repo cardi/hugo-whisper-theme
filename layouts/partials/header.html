@@ -1,10 +1,20 @@
 <div class='header'>
   <div class="container">
     <div class="logo">
+      {{ if .Site.Params.logo.standard }}
       <a href="{{ .Site.BaseURL }}"><img alt="Logo" src="{{ .Site.Params.logo.standard | relURL }}" /></a>
+      {{ else if .Site.Params.logo.standard_text }}
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Params.logo.standard_text }}</a>
+      {{ else }}
+      {{ end }}
     </div>
     <div class="logo-mobile">
+      {{ if .Site.Params.logo.mobile }}
       <a href="{{ .Site.BaseURL }}"><img alt="Logo" src="{{ .Site.Params.logo.mobile | relURL }}" /></a>
+      {{ else if .Site.Params.logo.mobile_text }}
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Params.logo.mobile_text }}</a>
+      {{ else }}
+      {{ end }}
     </div>
     {{ partial "main-menu.html" . }}
     {{ partial "hamburger.html" . }}
