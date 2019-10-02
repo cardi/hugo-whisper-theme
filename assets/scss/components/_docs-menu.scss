@@ -1,7 +1,7 @@
 .docs-menu {
   float: none;
   position: relative;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     float: left;
     position: fixed;
   }
