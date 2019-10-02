@@ -1,4 +1,10 @@
 .docs-menu {
+  float: none;
+  position: relative;
+  @include media-breakpoint-up(md) {
+    float: left;
+    position: fixed;
+  }
   h4 {
     font-size: 1rem;
     font-weight: bold;
