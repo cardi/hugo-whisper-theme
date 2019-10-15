@@ -1,4 +1,62 @@
-{{ define "header_css" }}{{ end }}
+{{ define "header_css" }}
+<style>
+img.qs {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: solid 1px black;
+}
+
+div.note {
+  padding: 5px;
+  margin: 5px 0px 1em 0px;
+  border: 1px solid #BDC3C7;
+  border-left-width: 5px;
+  border-radius: 4px;
+}
+
+div.note > h4 {
+  margin: 0 0 5px 0;
+  font-weight: 400;
+  font-size: 125%;
+}
+
+div.note > p {
+  margin: 0;
+}
+
+div.note-danger { border-left-color: #C0392B; }
+div.note-danger > h4        { color: #C0392B; }
+
+div.note-info { border-left-color: #27AE60; }
+div.note-info > h4        { color: #27AE60; }
+
+div.note-blue { border-left-color: #2980B9; }
+div.note-blue > h4        { color: #2980B9; }
+
+div.note-dark { border-left-color: #2C3E50; }
+div.note-dark > h4        { color: #2C3E50; }
+
+div.alert {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 5px 0 5px 0;
+}
+
+div.alert-info {
+         color: #27AE60;
+  border-color: #27AE60;
+}
+
+div.alert-danger {
+         color: #C0392B;
+  border-color: #C0392B;
+}
+</style>
+{{ end }}
 {{ define "body_classes" }}page-default-single{{ end }}
 {{ define "header_classes" }}{{ end }}
 
